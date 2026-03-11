@@ -2,13 +2,24 @@ from datetime import datetime
 
 student_id = "shefay9008"
 
-print(f"{student_id}'s Excel Spreadsheet Automation Menu")
+print(f"{student_id}'s Spreadsheet Automation Menu")
 print("Choose a number from the following options")
-print("1. Input Data")
-print("2. View Current Data")
-print("3. Generate Report")
 
+# Menu options stored in a list
+menu_options = [
+    "1. Input Data",
+    "2. View Current Data",
+    "3. Generate Report"
+]
 
-option = input("Please select an option (1-3): ")
+# option represents each menu item in the menu_options list
+for option in menu_options:
+    print(option)
 
-print(f"You selected {option} at {datetime.now()}")
+choice = input("Please select an option (1-3): ")
+
+# Validate user input
+if choice in ["1", "2", "3"]:
+    print(f"You selected {choice} at {datetime.now()}")
+else:
+    print("Error: Invalid choice selected.")
