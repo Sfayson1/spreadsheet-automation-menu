@@ -49,16 +49,14 @@ Output
 
 --------------------------------------------------
 
-Files Included
+## Files Included
 
-File                Description
---------------------------------------------------
-final_project.py    Main program with menu + report generation
-ZooData.csv         Data file (created/updated by program)
-final.xlsx          Excel report with chart (generated after running program)
-README.txt          Project description
-
---------------------------------------------------
+| File | Description |
+|------|-------------|
+| final_project.py | Main program with menu + report generation |
+| ZooData.csv | Data file (created/updated by program) |
+| final.xlsx | Excel report with chart (generated after running program) |
+| README.md | Project description |
 
 Requirements
 
@@ -70,11 +68,12 @@ pip install openpyxl
 
 --------------------------------------------------
 
-Example Data Format (CSV)
+## Example Data Format (CSV)
 
-Date, Pounds, Kilograms
-10/01/2022,150,68.03
-10/02/2022,155,70.29
+| Date       | Pounds | Kilograms |
+|------------|--------|-----------|
+| 10/01/2022 | 150    | 68.03     |
+| 10/02/2022 | 155    | 70.29     |
 
 --------------------------------------------------
 
