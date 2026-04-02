@@ -1,35 +1,92 @@
-# ZooData CSV Assignment
+ZooData CSV Automation Project
 
-A Python program that collects user input, stores the data in a CSV file, and allows the user to view the stored data.
+A Python program that collects user input, stores the data in a CSV file, and generates Excel reports with charts using openpyxl.
 
----
+--------------------------------------------------
 
-## Features
+Features
 
-- Input multiple entries (date and weight)
-- Convert weight from pounds to kilograms
-- Save data to `ZooData.csv`
+- Input multiple entries (date and weight in pounds)
+- Automatically convert pounds to kilograms
+- Save data to ZooData.csv
 - View saved data from the CSV file
-- Uses `try-except` for error handling
+- Generate Excel reports with:
+  - Bar charts
+  - Line charts
+- Choose data source for chart:
+  - Pounds
+  - Kilograms
+- Dynamic chart title using Student ID and current date
+- Uses try-except for error handling
 
----
+--------------------------------------------------
 
-## How to Run
+How to Run
 
 1. Run the Python file:
+   python final_project.py
 
-   ```bash
-   python yourfilename.py
-   ```
+2. Select from the menu:
 
-2. Choose option `1` to input data
-3. Choose option `2` to view saved data
+   1 → Input Data
+   2 → View Current Data
+   3 → Generate Report
 
----
+3. If you select option 3:
+   - Choose chart type (bar or line)
+   - Choose data source (pounds or kilograms)
+   - The program will generate an Excel file with a chart
 
-## Files Included
+--------------------------------------------------
 
-| File | Description |
-|------|-------------|
-| `yourfilename.py` | Main program |
-| `ZooData.csv` | Generated data file |
+Output
+
+- CSV file:
+  ZooData.csv (stores all entered data)
+
+- Excel file:
+  final.xlsx (contains data + generated chart)
+
+--------------------------------------------------
+
+Files Included
+
+File                Description
+--------------------------------------------------
+final_project.py    Main program with menu + report generation
+ZooData.csv         Data file (created/updated by program)
+final.xlsx          Excel report with chart (generated after running program)
+README.txt          Project description
+
+--------------------------------------------------
+
+Requirements
+
+- Python 3.x
+- openpyxl library
+
+Install required library:
+pip install openpyxl
+
+--------------------------------------------------
+
+Example Data Format (CSV)
+
+Date, Pounds, Kilograms
+10/01/2022,150,68.03
+10/02/2022,155,70.29
+
+--------------------------------------------------
+
+Notes
+
+- The Excel chart is automatically generated when selecting option 3
+- The chart title format:
+  <student_id> <current date>
+
+  Example:
+  shefay9008 04/01/2026
+
+- Make sure ZooData.csv exists or is created in the same directory
+
+--------------------------------------------------
